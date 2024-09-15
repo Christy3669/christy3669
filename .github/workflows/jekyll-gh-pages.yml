@@ -1,0 +1,138 @@
+name = input("Please enter your name: ")
+print("Hello", name, "welcome to Python programming.")
+
+# Converting full name to uppercase
+full_name = input("Please enter your first and last name (separated by a space): ")
+print(full_name.upper())
+
+# Ask user for their age
+age = int(input("Please enter your age: "))
+
+# Ask user if they have a driver's license (yes/no)
+has_license = input("Do you have a driver's license? (yes/no): ")
+
+# Convert user's response to lowercase for easier comparison
+has_license = has_license.lower()
+
+# Check conditions and print result
+if age >= 18 and has_license == "yes":
+    print("You are allowed to drive.")
+else:
+    print("You are not allowed to drive.")
+Program 1: Rolling Dice
+
+
+
+import random
+
+def roll_dice():
+    return random.randint(1, 6)
+
+print("You rolled a", roll_dice())
+
+
+
+Program 2: Rock, Paper, Scissors
+
+
+
+import random
+
+def get_computer_choice():
+    choices = ["rock", "paper", "scissors"]
+    return random.choice(choices)
+
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return "It's a tie!"
+    elif (user_choice == "rock" and computer_choice == "scissors") or \
+         (user_choice == "scissors" and computer_choice == "paper") or \
+         (user_choice == "paper" and computer_choice == "rock"):
+        return "You win!"
+    else:
+        return "Computer wins!"
+
+def play_game():
+    user_choice = input("Enter your choice (rock, paper, scissors): ").lower()
+    computer_choice = get_computer_choice()
+    print("Computer chose", computer_choice)
+    print(determine_winner(user_choice, computer_choice))
+play_game()
+
+# Create a list of five favorite foods
+favorite_foods = ["Pizza", "Sushi", "Tacos", "Burgers", "Fries"]
+
+# Print initial list
+print("Initial List:")
+print(favorite_foods)
+
+# Append new foods to the list
+favorite_foods.append("Chicken Wings")
+favorite_foods.append("Ice Cream")
+
+# Print list after appending
+print("\nList after appending:")
+print(favorite_foods)
+
+# Insert a food at position 2
+favorite_foods.insert(2, "Salad")
+
+# Print list after inserting
+print("\nList after inserting:")
+print(favorite_foods)
+
+# Remove a food by name
+favorite_foods.remove("Burgers")
+
+# Print list after removing
+print("\nList after removing:")
+print(favorite_foods)
+
+# Sort the list in alphabetical order
+favorite_foods.sort()
+
+# Print final list
+print("\nFinal List (sorted):")
+print(favorite_foods)
+import random
+
+def get_friend_names():
+    friend_names = []
+    for i in range(5):
+        name = input(f"Enter friend {i+1}'s name: ")
+        friend_names.append(name)
+    return friend_names
+
+def select_winner(friend_names):
+    winner = random.choice(friend_names)
+    return winner
+
+def main():
+    print("Enter names of 5 friends:")
+    friend_names = get_friend_names()
+    print("\nFriend List:")
+    for i, name in enumerate(friend_names):
+        print(f"{i+1}. {name}")
+    
+    winner = select_winner(friend_names)
+    print(f"\nThe winner is... {winner}! Congratulations!")
+
+if __name__ == "__main__":
+    main()
+github is aweb based platform that uses git for version control and collaborate software development.it allows the programmer 
+to host and manage their  code repositories,track changes , collaborate with others,and contributes open source
+it is useful in version control,collaboration,open source,project magement
+
+Install Python Extension:
+1. Open VS Code.
+2. Click the Extensions icon in the Activity Bar (left sidebar) or press Ctrl+Shift+X (Windows/Linux) or Cmd+Shift+X (Mac).
+3. Search for "Python" in the Extensions Marketplace.
+4. Select the "Python" extension by Microsoft.
+5. Click the "Install" button.
+6. Wait for the installation to complete.
+Run Python File from Terminal:
+
+1. Open the terminal in VS Code by pressing Ctrl+ (Windows/Linux) or Cmd+ (Mac) or navigating to View > Terminal.
+2. Navigate to the directory containing your Python file using the cd command.
+3. Type python (link unavailable) (replace "(link unavailable)" with your actual file name).
+4. Press Enter to run the file.
